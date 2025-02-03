@@ -2,6 +2,8 @@
 import { motion } from "framer-motion";
 import Button from "./Button";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
+import Link from "next/link";
 
 const projects = [
   {
@@ -9,21 +11,21 @@ const projects = [
     description: "A Ecommerce Furniro web application built with NextJs , TypeScript , Tailwind Css & using CMS Sanity", 
     tags: ["NextJS", "TypeScript", "Tailwind"],
     website: "https://furniro-alpha-pied.vercel.app", // Your live website URL
+    image:"/images/furniro.jpg"
+  },
+  {
+    title: "Blood Donation",
+    description: "A Blood Donation web application built with ReactJs , JavaScript & Tailwind Css",
+    tags: ["ReactJs", "JavaScript", "Tailwind"],
+    website: "https://blood-donation-frontend-nu.vercel.app", // Your live website URL
     image:"/images/blood-donation.jpg"
   },
   {
-    title: "Project One",
-    description: "A Ecommerce Furniro web application built with NextJs , TypeScript & Tailwind Css",
+    title: "Ecommerce Comforty",
+    description: "A Ecommerce comforty web application built with NextJs , TypeScript & Tailwind Css",
     tags: ["NextJS", "TypeScript", "Tailwind"],
-    website: "https://furniro-alpha-pied.vercel.app", // Your live website URL
-    image:"/images/blood-donation.jpg"
-  },
-  {
-    title: "Project One",
-    description: "A Ecommerce Furniro web application built with NextJs , TypeScript & Tailwind Css",
-    tags: ["NextJS", "TypeScript", "Tailwind"],
-    website: "https://furniro-alpha-pied.vercel.app", // Your live website URL
-    image:"/images/blood-donation.jpg"
+    website: "https://hackathon-quater2.vercel.app", // Your live website URL
+    image:"/images/comforty.jpg"
   },
 ];
 
@@ -57,11 +59,15 @@ const Projects = ({showMore = true}:{showMore? : boolean}) => {
             >
               <div className="relative aspect-video overflow-hidden">
                 {/* Display the screenshot */}
-                  <img
+                <Link href={project.website} target="_blank">
+                  <Image
                     src={project.image}
                     alt={project.title}
                     className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-300"
+                    width={300}
+                    height={300}
                   />
+                </Link>
               </div>
 
               <div className="p-6">
