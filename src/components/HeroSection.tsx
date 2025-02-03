@@ -16,10 +16,10 @@ const Hero = () => {
           transition={{ duration: 0.6 }}
         >
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-            Hi, I'm <span className="text-purple-500">Muhammad Talha</span>
+            {`Hi, I'm`} <span className="text-purple-500">Muhammad Talha</span>
           </h1>
           <p className="text-xl text-gray-400 mb-8">
-            A Full Stack Developer, specializing in building exceptional digital experiences.
+            {`A Full Stack Developer, specializing in building exceptional digital experiences.`}
           </p>
           
           <div className="flex gap-4">

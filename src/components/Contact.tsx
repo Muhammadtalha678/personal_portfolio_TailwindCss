@@ -20,7 +20,7 @@ const Contact = () => {
           
           <div className="mt-8 glass p-8 rounded-2xl">
             <p className="text-gray-300 mb-6">
-              Interested in working together? Let's discuss your project.
+              {`Interested in working together? Let's discuss your project.`}
             </p>
             <Button
                           variant="outline"
@@ -29,12 +29,7 @@ const Contact = () => {
                         >
                           Contact Me
                         </Button>
-            {/* <a
-              href="mailto:your.email@example.com"
-              className="px-6 py-3 rounded-full glass hover-glass inline-block"
-            >
-              Send Message
-            </a> */}
+            
           </div>
         </motion.div>
       </div>
