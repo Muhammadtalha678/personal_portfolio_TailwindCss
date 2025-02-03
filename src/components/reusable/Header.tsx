@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const navLink = [
   { name: "Home", path: "/" },
@@ -17,7 +18,8 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur-md shadow-md px-8 py-4">
       <nav className="max-w-6xl mx-auto flex justify-between items-center">
-        <Link href="/" className="text-xl font-bold text-purple-500">Muhammad Talha</Link>
+        <Link href="/" className="text-xl font-bold text-purple-500">
+          Muhammad Talha</Link>
 
         <ul className="hidden md:flex space-x-8">
           {navLink.map((e, i) => (
