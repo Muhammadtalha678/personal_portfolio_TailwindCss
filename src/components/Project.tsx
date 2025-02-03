@@ -21,6 +21,13 @@ const projects = [
     image:"/images/blood-donation.jpg"
   },
   {
+    title: "Blog Website",
+    description: "A Blog web application built with NextJs , TypeScript & Tailwind Css",
+    tags: ["NextJS", "TypeScript", "Tailwind"],
+    website: "https://milestone3-blog-puce.vercel.app", // Your live website URL
+    image:"/images/blogs.jpg"
+  },
+  {
     title: "Ecommerce Comforty",
     description: "A Ecommerce comforty web application built with NextJs , TypeScript & Tailwind Css",
     tags: ["NextJS", "TypeScript", "Tailwind"],
