@@ -105,11 +105,15 @@ const Projects = ({showMore = true}:{showMore? : boolean}) => {
             >
               <div className="relative aspect-video overflow-hidden">
                 {/* Display the screenshot */}
-                  <img
+                  <Link href={project.website} target="_blank">
+                  <Image
                     src={project.image}
                     alt={project.title}
                     className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-300"
+                    width={300}
+                    height={300}
                   />
+                </Link>
               </div>
 
               <div className="p-6">
